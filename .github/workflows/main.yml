@@ -4,7 +4,7 @@ on:
   push:   # 모든 브랜치에서 push 시 실행
 
 jobs:
-  test:
+  test-pikacu:
     runs-on: ubuntu-latest
 
     steps:
