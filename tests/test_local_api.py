@@ -1,3 +1,5 @@
+import requests
+
 # def test_local_get_hello(base_url_local):
 #     """
 #     로컬 API(/hello) GET 테스트
