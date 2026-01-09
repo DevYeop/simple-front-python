@@ -45,8 +45,8 @@
 
         // POST /posts 요청
         document.getElementById("sendBtn").addEventListener("click", async () => {
-            const title = document.getElementById("title").value;
-            const body = document.getElementById("body").value;
+            const title = document.getElementById("title").value; //겉절이 담구는 법
+            const body = document.getElementById("body").value; //좋은 멸치액젓을 써야함
 
             const response = await fetch("http://localhost:5000/posts", {
                 method: "POST",
@@ -63,9 +63,9 @@
 
         // GET /hello 요청
         document.getElementById("helloBtn").addEventListener("click", async () => {
-            const response = await fetch("http://localhost:5000/hello");
+            const response = await fetch("http://localhost:5000/hello"); //"너부리야~",
             const text = await response.text();
-            helloResult.textContent = text;
+            helloResult.textContent = text; // "너부리야~",
         });
     </script>
 

@@ -40,6 +40,8 @@ def test_get_post_1_schema_validation():
     # -----------------------------
     # posts/1 응답은 "객체"여야 하므로 dict가 맞는지 확인
     # 이 단계에서는 키나 값 내용은 전혀 보지 않음
+    # data라는 변수에 들어있는 거 json  맞음?
+    # data라는 변수에 들어있는 거 딕셔너리 맞음?
     assert isinstance(data, dict)
 
     # -----------------------------
@@ -50,9 +52,9 @@ def test_get_post_1_schema_validation():
         "type": "object",
         "properties": {
             "userId": {"type": "number"},
+            "body": {"type": "string"},
             "id": {"type": "number"},
             "title": {"type": "string"},
-            "body": {"type": "string"},
         },
         # 반드시 존재해야 하는 필드들
         "required": ["userId", "id", "title", "body"]
